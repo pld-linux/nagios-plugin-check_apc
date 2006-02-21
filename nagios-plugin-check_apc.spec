@@ -8,12 +8,12 @@ Summary:	Nagios Plugin for apcupsd APC Smart-UPS
 Summary(pl):	Wtyczka Nagiosa do sprawdzania apcupsd APC Smart-UPS
 Name:		nagios-plugin-check_apc
 Version:	0.0.2
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Networking
 Source0:	http://www.negative1.org/check_apc/check_apc
 # Source0-md5:	8d3770144e00a4ab41879c7a8b876065
-#Patch0:	check_apc-path.patch
+Patch0:		%{name}-path.patch
 URL:		http://www.negative1.org
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	nagios-core
@@ -33,7 +33,7 @@ check_apc wtyczka Nagiosa do sprawdzania apcupsd.
 %prep
 %setup -q -c -T
 install %{SOURCE0} .
-#%patch0 -p1
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
