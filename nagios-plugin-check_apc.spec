@@ -1,5 +1,5 @@
 #
-# another version this plugin is here:
+# another version of this plugin is here:
 # http://www.opennet.ru/base/sys/apc_ups_nagios.txt.html
 #
 %define		namescript check_apc
@@ -14,7 +14,7 @@ Group:		Networking
 Source0:	http://www.negative1.org/check_apc/check_apc
 # Source0-md5:	8d3770144e00a4ab41879c7a8b876065
 Patch0:		%{name}-path.patch
-URL:		http://www.negative1.org
+URL:		http://www.negative1.org/
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	nagios-core
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,10 +25,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 #define		_noautoreq 'perl(utils)'
 
 %description
-check_apc is a Nagios plugin that can be used with apcupsd or apcsnmp to monitor an APC UPS.
+check_apc is a Nagios plugin that can be used with apcupsd or apcsnmp
+to monitor an APC UPS.
 
 %description -l pl
-check_apc wtyczka Nagiosa do sprawdzania apcupsd.
+check_apc to wtyczka Nagiosa do monitorowania UPS-ów APC przy u¿yciu
+apcupsd lub apcsnmp.
 
 %prep
 %setup -q -c -T
