@@ -5,7 +5,7 @@
 %define		namescript check_apc
 %include	/usr/lib/rpm/macros.perl
 Summary:	Nagios Plugin for apcupsd APC Smart-UPS
-Summary(pl):	Wtyczka Nagiosa do sprawdzania apcupsd APC Smart-UPS
+Summary(pl.UTF-8):   Wtyczka Nagiosa do sprawdzania apcupsd APC Smart-UPS
 Name:		nagios-plugin-check_apc
 Version:	0.0.2
 Release:	0.2
@@ -28,8 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 check_apc is a Nagios plugin that can be used with apcupsd or apcsnmp
 to monitor an APC UPS.
 
-%description -l pl
-check_apc to wtyczka Nagiosa do monitorowania UPS-Ûw APC przy uøyciu
+%description -l pl.UTF-8
+check_apc to wtyczka Nagiosa do monitorowania UPS-√≥w APC przy u≈ºyciu
 apcupsd lub apcsnmp.
 
 %prep
